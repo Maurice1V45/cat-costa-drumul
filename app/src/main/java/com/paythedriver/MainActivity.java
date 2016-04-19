@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private long calculateSumPerPassenger(String passengerNr) {
-        if (passengerNr.isEmpty()) {
+        if (passengerNr.isEmpty() || Integer.valueOf(passengerNr) == 1) {
             return -1;
         } else {
             return (long) (Math.ceil((Double.valueOf(calculateSum()) / Double.valueOf(passengerNr))));
