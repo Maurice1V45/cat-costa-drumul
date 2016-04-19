@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_background" />
+
+    <LinearLayout
+        android:id="@+id/distance_layout"
+        android:layout_width="@dimen/bu10"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/bu2"
+        android:background="@drawable/transparent_rounded_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/bu0_5">
+
+        <ImageView
+            android:layout_width="@dimen/bu6"
+            android:layout_height="@dimen/bu6"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_distance" />
+
+        <EditText
+            android:id="@+id/distance_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/cell_title_distance"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cell_description_distance"
+            android:textSize="@dimen/text_size_26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/consumption_layout"
+        android:layout_width="@dimen/bu10"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/bu2"
+        android:background="@drawable/transparent_rounded_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/bu0_5">
+
+        <ImageView
+            android:layout_width="@dimen/bu6"
+            android:layout_height="@dimen/bu6"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_consumption" />
+
+        <EditText
+            android:id="@+id/consumption_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/cell_title_consumption"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cell_description_consumption"
+            android:textSize="@dimen/text_size_26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price_layout"
+        android:layout_width="@dimen/bu10"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/distance_layout"
+        android:layout_marginLeft="@dimen/bu2"
+        android:background="@drawable/transparent_rounded_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/bu0_5">
+
+        <ImageView
+            android:layout_width="@dimen/bu6"
+            android:layout_height="@dimen/bu6"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_price" />
+
+        <EditText
+            android:id="@+id/price_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/cell_title_price"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cell_description_price"
+            android:textSize="@dimen/text_size_26px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/people_layout"
+        android:layout_width="@dimen/bu10"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/consumption_layout"
+        android:layout_marginRight="@dimen/bu2"
+        android:background="@drawable/transparent_rounded_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/bu0_5">
+
+        <ImageView
+            android:layout_width="@dimen/bu6"
+            android:layout_height="@dimen/bu6"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_people" />
+
+        <EditText
+            android:id="@+id/people_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/cell_title_people"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cell_description_people"
+            android:textSize="@dimen/text_size_26px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/price_layout">
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="@dimen/bu15"
+            android:layout_height="@dimen/bu8"
+            android:layout_centerInParent="true"
+            android:background="@drawable/light_blue_rounded_selector"
+            android:text="@string/button_calculate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_36px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

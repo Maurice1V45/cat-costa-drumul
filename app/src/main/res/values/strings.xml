@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Cât costă drumul</string>
+    <string name="currency">RON</string>
+
+    <!-- Cells -->
+    <string name="cell_title_distance">Distanță</string>
+    <string name="cell_title_consumption">Consum</string>
+    <string name="cell_title_price">Preț litru</string>
+    <string name="cell_title_people">Persoane</string>
+    <string name="cell_description_distance">(km)</string>
+    <string name="cell_description_consumption">(l/100km)</string>
+    <string name="cell_description_price">(RON/l)</string>
+    <string name="cell_description_people">(nr)</string>
+
+    <!-- Dialogs -->
+    <string name="help_dialog_main_description">Cât costă drumul te ajută să calculezi cât ai de plătit pentru carburant atunci când călătorești cu mașina. Trebuie doar să completezi urmatoarele câmpuri:</string>
+    <string name="help_dialog_distance_description">Distanța parcursă in km</string>
+    <string name="help_dialog_distance_example">(ex: 125)</string>
+    <string name="help_dialog_consumption_description">Consumul de carburant la 100 de km</string>
+    <string name="help_dialog_consumption_example">(ex: 8.4)</string>
+    <string name="help_dialog_price_description">Prețul in RON al unui litru de carburant</string>
+    <string name="help_dialog_price_example">(ex: 5.19)</string>
+    <string name="help_dialog_people_description">Numărul de persoane care călătoresc</string>
+    <string name="help_dialog_people_example">(ex: 4)</string>
+    <string name="result_dialog_title">Drumul costă&#8230;</string>
+    <string name="result_dialog_description" formatted="false">Fiecare pasager are de plătit %sum% RON</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_distance">Distanță incorectă</string>
+    <string name="error_invalid_consumption">Consum incorect</string>
+    <string name="error_invalid_price">Preț incorect</string>
+    <string name="error_invalid_people">Nr. persoane incorect</string>
+
+    <!-- Others -->
+    <string name="button_calculate">Calculează</string>
+    <string name="menu_button_help">Ajutor</string>
+</resources>
